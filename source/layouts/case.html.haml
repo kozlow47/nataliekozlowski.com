@@ -1,0 +1,19 @@
+<!doctype html>
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %title= data.page.title || "Natalie Kozlowski"
+    %link{:href => "/images/favicon.png", :rel => "shortcut icon", :type => "image/png"}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0;", :name => "viewport"}/
+    = stylesheet_link_tag "all"
+    %link{:href => "stylesheets/amazium.css", :media => "screen and (min-width: 770px)", :rel => "stylesheet"}/
+
+  %body{:class => page_classes}
+    = partial "header"
+    %section
+      %h1 #{caseName}
+    = yield
+    = partial "footer"
+
+    %script
+      $(".myName span").css({"color":"caseColor"});

@@ -1,0 +1,82 @@
+// color varaibles
+$salmonRed: #FA474E
+$textGrey: #333
+$backgroundGrey: #231F20
+
+// container and global styles
+body, html
+  background: #fff
+  width: 100%
+  height: 100%
+  margin: 0px
+  padding: 0px
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+  color: $textGrey
+ul
+  margin: 0px
+  padding: 0px
+
+// header styles
+header
+  text-transform: uppercase
+  padding: 45px 0px
+  text-align: center
+  .myName
+    letter-spacing: 0.2em
+    font-size: 24px
+    text-decoration: none
+    color: $textGrey
+    margin: 0px 37px
+    display:inline-block
+    vertical-align:middle
+    span
+      color: $salmonRed
+  nav
+    ul
+      li
+        display: inline
+        display:inline-block
+        vertical-align:middle
+        margin: 0px 50px
+        font-weight: normal
+        font-size: 15px
+        a
+          text-decoration: none
+          color: #AFAFAF
+          letter-spacing: 1px
+          transition: 0.4s
+          padding-bottom: 1px
+          border-bottom: 2px solid #fff
+          &:hover
+            color: #000
+            transition: 0.3s
+            border-bottom: 2px solid #000
+        .active
+          color: #000
+          transition: 0.3s
+          border-bottom: 2px solid #000
+
+// Styles for Work or Homepage
+.previewContainer
+  background: red
+  width: 1300px
+  margin: 0 auto
+  display: block
+  clear: both
+  div
+    width: 423px
+    height: 300px
+    background: $backgroundGrey
+    float: left
+    margin: 5px
+
+.filterNav
+  ul
+    text-align: center
+    li
+      display: inline-block
+      a
+        text-decoration: none
+        color: $textGrey
+        margin: 0px 10px
+        text-transform: uppercase
