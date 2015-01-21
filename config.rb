@@ -53,7 +53,28 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-page "/projects/*", :layout => "case"
+activate :directory_indexes
+
+#page "/projects/*", :layout => "case"
+
+activate :blog do |blog|
+  blog.layout = "case"
+  blog.permalink = "projects/:title.html"
+  blog.sources = "projects/:title.html"
+end
+
+#activate :blog do |blog|
+#  blog.name = 'projects'
+#  blog.prefix = 'projects'
+#  blog.permalink = "projects/{title}.html"
+#  # blablablah.....
+#end
+
+#activate :blog do |blog|
+#  blog.name = 'blog2'
+#  blog.prefix = 'blog2'
+#  # blablablah.....
+#end
 
 # Build-specific configuration
 configure :build do

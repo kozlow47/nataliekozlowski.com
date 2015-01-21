@@ -1,22 +1,14 @@
 .filterNav
   %ul
+    %li=link_to "All", "javascript:void(0);", :class => "active"
     %li=link_to "Web Design", "javascript:void(0);"
-    %li=link_to "Web Development", "javascript:void(0);"
-    %li=link_to "Graphic Design", "javascript:void(0);"
+    %li=link_to "Graphics & Prints", "javascript:void(0);"
+    %li=link_to "Logo & Branding", "javascript:void(0);"
 
 .previewContainer
-  .preview
-  .preview
-  .preview
-  .preview
-  .preview
-  .preview
-  .preview
-  .preview
-  .preview
-  .preview
-  .preview
-  .preview
-  .preview
-  .preview
-  .preview
+  - blog.articles[0...5].each do |article|
+    .preview{:class => article.data.category}
+      %div
+        %h1
+          %a{:href => article.url}= article.data.caseName
+      %img{:src => "images/#{article.data.preview}"}
