@@ -16,35 +16,22 @@ ul
   margin: 0px
   padding: 0px
 
+p
+  a
+    color: $salmonRed
+    font-weight: bold
+    text-decoration: none
+    transition: 0.4s
+    &:hover
+      text-decoration: underline
+      transition: 0.4s
+
 // header styles
 header
   text-transform: uppercase
   padding: 35px 0px
   text-align: center
   border-bottom: 1px solid #dedede
-  .logo
-    display: block
-    float: left
-    a
-      letter-spacing: 0.2em
-      font-size: 22px
-      text-decoration: none
-      color: $textGrey
-      float: left
-      display:inline-block
-      vertical-align:middle
-      span
-        color: $salmonRed
-    .headline
-      color: #AFAFAF
-      text-transform: none
-      font-size: 12px
-      letter-spacing: 1px
-      float: left
-      font-weight: 200
-      display: block
-      clear: both
-      margin-top: 5px
   nav
     float: right
     position: relative
@@ -73,6 +60,30 @@ header
           color: #000
           transition: 0.3s
 
+.logo
+  display: block
+  float: left
+  a
+    letter-spacing: 0.2em
+    font-size: 22px
+    text-decoration: none
+    color: $textGrey
+    float: left
+    display:inline-block
+    vertical-align:middle
+    span
+      color: $salmonRed
+  .headline
+    color: #AFAFAF
+    text-transform: none
+    font-size: 12px
+    letter-spacing: 1px
+    float: left
+    font-weight: 200
+    display: block
+    clear: both
+    margin-top: 5px
+
 .bodyCase
   section
     img
@@ -86,36 +97,36 @@ header
 // Styles for Work or Homepage
 .previewContainer
   margin: 0 auto
-  width: 101%
+  width: 102%
   display: block
   clear: both
   position: relative
-  left: -5px
+  left: -13px
   clear: both
   float: left
   .preview
-    width: 393px
-    height: 290px
+    width: 385px
+    height: 260px
     float: left
-    margin: 5px
+    margin: 11px
     overflow: hidden
-    border-radius: 2px
+    border-radius: 3px
     cursor: pointer
     div
       opacity: 0
       position: absolute
-      background: rgba(0,0,0,0.8)
-      border-radius: 2px
-      width: 393px
-      height: 290px
-      transition: 0.7s
+      background: rgba(31,31,31,.9)
+      border-radius: 3px
+      width: 385px
+      height: 260px
+      transition: opacity .3s ease-out
       &:hover
         opacity: 10
-        transition: 0.7s
+        transition: opacity .3s ease-out
       h1
         position: relative
         top: 115px
-        font-size: 20px
+        font-size: 18px
         text-align: center
         font-weight: 200
       a
@@ -127,7 +138,7 @@ header
       height: auto
 
 .filterNav
-  margin: 33px 0px
+  margin: 37px 0px
   ul
     text-align: center
     li
@@ -140,7 +151,7 @@ header
         text-decoration: none
         color: #adadad
         letter-spacing: 0.7px
-        font-weight: normal
+        font-weight: 200
         text-transform: uppercase
         border-right: 1px solid #adadad
         padding: 1px 10px
@@ -150,3 +161,32 @@ header
       .active
         color: $textGrey
         transition: 0.4s
+
+//footer styles
+.footer
+  text-align: center
+  margin: 100px 0px
+  .logo
+    display: inline-block
+    float: none
+    margin: 0 auto
+    a
+      text-align: center
+      text-transform: uppercase
+    .headline
+      text-align: center
+      padding-top: 5px
+      float: none
+
+footer
+  padding: 30px 0px
+  border-top: 1px solid #dedede
+  color: #AFAFAF
+  font-size: 12px
+  letter-spacing: 0.5px
+  .row
+    div
+      &:first-child
+        float: left
+      &:last-child
+        float: right

@@ -1,9 +1,18 @@
 %section.footer
   .row
-    %h1 Natalie Kozlowski
-    %p Web Developer &#8226; Web Designer &#8226; Graphic Designer &#8226; Writer
+    .logo
+      %a{:href => "javascript:void(0);", :class => "myName"}
+        %span Natalie
+        Kozlowski
+      %span.headline Front-End Developer | UI/UX Designer
 %footer
   .row
-    =link_to "Twitter", "javascript:void(0);"
-    =link_to "Dribble", "javascript:void(0);"
-    =link_to "Contact", "javascript:void(0);"
+    %div
+      %p
+        &#169;
+        %span.year
+        Natalie Kozlowski
+    %div
+      %p
+        Find me on 
+        =link_to "Twitter!", "https://twitter.com/nrkozlowski"
