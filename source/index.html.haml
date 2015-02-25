@@ -5,10 +5,11 @@
     %li=link_to "Graphics & Prints", "javascript:void(0);"
     %li=link_to "Logo & Branding", "javascript:void(0);"
 
-.previewContainer
-  - blog.articles.each do |article|
-    .preview{:class => article.data.category}
-      %div
-        %h1
-          %a{:href => article.url}= article.data.caseName
-      %img{:src => "images/#{article.data.preview}"}
+.row
+  .previewContainer
+    - blog.articles.each do |article|
+      .preview{:class => article.data.category}
+        %div
+          %h1
+            %a{:href => article.url}= article.data.caseName
+        %img{:src => "images/#{article.data.preview}"}
