@@ -1,0 +1,15 @@
+.row
+  %h1 About Me
+  %p Hello! My name is Natalie Kozlowski. By day, I work for CodeGuard as a front-end developer and designer in Atlanta, GA. In my spare time I work on side-projects in web and graphic design, play percussion in a community band, explore the outdoors, and learn how to speak Korean. I graduated from Michigan State University with a degree in Professional Writing.
+
+  %p I specialize in designing and developing websites/apps that are user-friendly and built according to best-practice web standards. I also create t-shirt designs, infographics, posters, custom stationary, and much more!
+
+  %p
+    Want to say hello? Feel free to reach out to me on twitter! - 
+    %A{:href => "https://twitter.com/nrkozlowski", :target => "_blank"} @NRKozlowski
+
+:javascript
+  $(document).ready(function() {
+    jQuery(".work").removeClass("active");
+    jQuery(".about").addClass("active");
+  });// document.ready

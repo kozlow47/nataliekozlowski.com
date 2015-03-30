@@ -9,7 +9,13 @@ caseLink: https://www.codeguard.com/
 caseColor: #7dbd16
 ---
 
-%section
+%section.detailView
   .row
-    %h1= data.page.caseName
-    %img{:src => data.page.preview}
+    %h1
+      = data.page.caseName
+      %span Web-app design
+    %p As the lead front-end developer and designer of CodeGuard I'm tasked daily with designing new features, building them with the team, and maintaining our existing application. Some of the features I've worked on include our website/database success graphs, our initial backup progress tracker, our File Explorer feature, and our Test Restore feature. On occasion I also have fun dressing up our app-mascot C.G., the friendly CodeGuard robot who tirelessly monitors your site to make sure it's safe!
+    %img{:class => "fullScreenshot", :src => "/images/cg_app/fullscreen_cgapp1.png", :alt => "CodeGuard app website backup success graphs"}
+    %img{:class => "fullScreenshot", :src => "/images/cg_app/fullscreen_cgapp2.png", :alt => "CodeGuard app Fedex"}
+    %img{:class => "cg1", :src => "/images/cg_app/cg_cg.png", :alt => "C.G. robot"}
+    %img{:class => "ss", :src => "/images/cg_app/ss_cgapp1.png", :alt => "CodeGuard app File Explorer"}
