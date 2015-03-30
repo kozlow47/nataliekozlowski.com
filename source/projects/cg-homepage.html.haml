@@ -9,7 +9,11 @@ caseLink: https://www.codeguard.com/
 caseColor: #7dbd16
 ---
 
-%section
+%section.detailView
   .row
-    %h1= data.page.caseName
-    %img{:src => data.page.preview}
+    %h1
+      = data.page.caseName
+      %span Website redesign
+    %p
+      asdf
+    %img{:class => "fullScreenshot", :src => "/images/cg_homepage/fullscreen_cghomepage1.png", :alt => "CodeGuard homepage redesign"}

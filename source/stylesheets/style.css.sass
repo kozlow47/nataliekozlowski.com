@@ -18,12 +18,12 @@ ul
 
 p
   a
-    color: $salmonRed
+    color: #000
     font-weight: bold
-    text-decoration: none
+    text-decoration: underline
     transition: 0.4s
     &:hover
-      text-decoration: underline
+      text-decoration: none
       transition: 0.4s
 
 //font for name
@@ -117,10 +117,6 @@ header
     img
       width: 100%
       height: auto
-    .row
-      img
-        width: 100%
-        height: auto
 
 // Styles for Work or Homepage
 .previewContainer
@@ -219,6 +215,12 @@ footer
         float: right
         position: relative
         left: -5px
+    p
+      a
+        color: $salmonRed
+        text-decoration: none
+        &:hover
+          text-decoration: underline
 
 .toTop
   display: none
@@ -264,6 +266,8 @@ footer
       -webkit-font-smoothing: antialiased
       font-smoothing: antialiased
       color: #5C5C5C
+    img
+      margin-bottom: 50px
 
 .fullScreenshot
   border: 1px solid #d8d6d6
@@ -275,8 +279,9 @@ footer
   -webkit-box-sizing: border-box
   background: #f5f6f7
   padding-top: 36px
+  margin-bottom: 50px
 
-.toGallery
+.btn_red
   background: $salmonRed
   color: #fff
   text-align: center
@@ -284,9 +289,38 @@ footer
   text-decoration: none
   width: 180px
   margin: 0 auto
-  margin-top: 50px
   padding: 17px 0px
   border-radius: 40px
-  margin: 0 autl
+  margin: 0 auto
   font-weight: bold
   font-size: 16px
+  transition: 0.4s
+  &:hover
+    background: #E3343B
+    transition: 0.4s
+
+.bodyCase
+  section
+    .ss
+      border: 1px solid #d8d6d6
+      width: 80% !important
+      margin: 0 auto !important
+      height: auto
+      display: block
+      margin-bottom: 50px !important
+
+.moduleLinks
+  padding: 0px
+  margin: 0 auto
+  width: 500px
+  margin-bottom: 60px
+  display: block
+  li
+    display: inline
+    margin-right: 22px
+    a
+      text-align: center
+      color: $textGrey
+      font-weight: bold
+      &:hover
+        text-decoration: none

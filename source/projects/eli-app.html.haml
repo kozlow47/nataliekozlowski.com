@@ -9,7 +9,14 @@ caseLink: https://app.elireview.com/
 caseColor: #7dbd16
 ---
 
-%section
+%section.detailView
   .row
-    %h1= data.page.caseName
-    %img{:src => data.page.preview}
+    %h1
+      = data.page.caseName
+      %span Web-app redesign
+    %p
+      Eli Review is an online tool that empowers teachers to coach students in feedback and revision to promote better writing. I redesigned numerous pages and features within the Eli application. Much of my work included redesigning certain repeated elements throughout the app, such as tables, buttons, pop-up modal windows, and forms. The main goal was to make these elements more useable; the secondary goal was to make the more aesthetically pleasing. I accomplished both without making the redesign of these elements disruptive and distracting, compared to the rest of the elements around them that weren't included in the redesign. I was also tasked with completely redesigning the login screen. After designing all of these pieces I coded each one using HTML, CSS and JavaScript.
+    %img{:class => "fullScreenshot", :src => "/images/eli_app/fullscreen_eliapp1.png", :alt => "Eli Review app login screen"}
+    %img{:class => "ss", :src => "/images/eli_app/ss_eliapp1.png", :alt => "Eli Review table redesign"}
+    %img{:class => "ss", :src => "/images/eli_app/ss_eliapp2.png", :alt => "Eli Review app support redesign"}
+    %img{:class => "ss", :src => "/images/eli_app/ss_eliapp3.png", :alt => "Eli Review app lightbox popup redesign"}

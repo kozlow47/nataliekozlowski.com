@@ -9,5 +9,5 @@
     - blog.articles.each do |article|
       .preview{:class => article.data.category}
         %a.holder{:href => article.url}
-          %img{:src => "images/#{article.data.preview}"}
+          %img{:src => "images/#{article.data.preview}", :alt => article.data.caseName}
           %span=article.data.caseName

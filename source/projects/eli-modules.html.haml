@@ -9,7 +9,21 @@ caseLink: http://elireview.com/content/td/feedback/
 caseColor: #7dbd16
 ---
 
-%section
+%section.detailView
   .row
-    %h1= data.page.caseName
-    %img{:src => data.page.preview}
+    %h1
+      = data.page.caseName
+      %span Custom website design
+    %p
+      Eli Review is an online tool that empowers teachers to coach students in feedback and revision to promote better writing. To help educate their potential customers (teachers), the Eli team created a free workshop series that included four articles on how one can better teach students in writing, feedback and revision. We called them 'module sites.' It was my task to come up with a custom design for the entire series and develop each one. For each module I created custom graphics to help illustrate certain teaching techniques, designed and coded custom animations in CSS3 and JavaScript, and made each one fully responsive and mobile-optimized. Additional technologies that I utilized include HTML5 video and JavaScript waypoints.
+
+    %ul.moduleLinks
+      %li
+        %a{:target => "_blank", :href => "http://elireview.com/content/td/feedback/"} Module Site 1
+      %li
+        %a{:target => "_blank", :href => "http://elireview.com/content/td/reviews/"} Module Site 2
+      %li
+        %a{:target => "_blank", :href => "http://elireview.com/content/td/revision/"} Module Site 3
+      %li
+        %a{:target => "_blank", :href => "http://elireview.com/content/td/evidence/"} Module Site 4
+    %img{:class => "fullScreenshot", :src => "/images/eli_modules/fullscreen_elimodule1.png", :alt => "Eli Review Module 1 | Feedback and Revision"}
