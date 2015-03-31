@@ -1,0 +1,19 @@
+@media only screen and (max-width: 630px) {
+  /* line 2, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/600.css.sass */
+  .logo {
+    float: none; }
+    /* line 4, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/600.css.sass */
+    .logo a, .logo .headline {
+      float: none;
+      text-align: center; }
+
+  /* line 9, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/600.css.sass */
+  header nav {
+    float: none;
+    left: 0px;
+    margin-bottom: 20px; }
+
+  /* line 14, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/600.css.sass */
+  .fullScreenshot {
+    padding-top: 0px;
+    border-radius: 3px; } }

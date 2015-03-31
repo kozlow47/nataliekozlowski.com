@@ -1,0 +1,23 @@
+@media only screen and (max-width: 770px) {
+  /* line 5, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/700.css.sass */
+  .previewContainer .preview .holder span {
+    display: none;
+    opacity: 0;
+    position: absolute; }
+
+  /* line 11, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/700.css.sass */
+  .bodyCase .detailView p {
+    width: 100%; } }
+@media only screen and (max-width: 700px) {
+  /* line 15, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/700.css.sass */
+  header {
+    margin-bottom: 20px; }
+
+  /* line 18, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/700.css.sass */
+  .logo {
+    width: auto;
+    margin: 0 auto; }
+
+  /* line 23, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/700.css.sass */
+  .previewContainer .preview {
+    width: 50%; } }
