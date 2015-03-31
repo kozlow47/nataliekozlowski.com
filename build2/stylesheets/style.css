@@ -1,0 +1,370 @@
+@charset "UTF-8";
+/* line 7, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+body, html {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #333; }
+
+/* line 15, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+/* line 19, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+h1 {
+  font-weight: 500; }
+
+/* line 23, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+p a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: 0.4s; }
+  /* line 28, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  p a:hover {
+    text-decoration: none;
+    transition: 0.4s; }
+
+@font-face {
+  font-family: cocogoose;
+  src: url("fonts/cocogoose.otf") format("opentype");
+  behavior: url(/javascripts/PIE.htc);
+  font-weight: bold; }
+/* line 40, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+header {
+  display: block;
+  margin-bottom: 35px;
+  padding: 23px 0px;
+  background: white;
+  width: 100%;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f1f1f1;
+  text-align: center; }
+  /* line 52, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  header nav {
+    float: right;
+    position: relative;
+    top: 15px;
+    left: -5px; }
+    /* line 57, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+    header nav i {
+      font-family: "icons";
+      font-style: normal;
+      font-size: 27px;
+      display: none; }
+      /* line 62, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+      header nav i:before {
+        content: "";
+        cursor: pointer;
+        display: block; }
+    /* line 67, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+    header nav ul li {
+      display: inline;
+      margin: 0px 17px;
+      font-weight: normal;
+      font-size: 14px; }
+      /* line 74, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+      header nav ul li:last-child {
+        margin-right: 0px; }
+      /* line 76, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+      header nav ul li a {
+        text-decoration: none;
+        color: #AFAFAF;
+        letter-spacing: 1px;
+        transition: 0.4s;
+        padding-bottom: 1px;
+        border-bottom: 2px solid #fff; }
+        /* line 83, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+        header nav ul li a:hover {
+          color: #000;
+          transition: 0.3s; }
+      /* line 86, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+      header nav ul li .active {
+        color: #000;
+        transition: 0.3s; }
+
+/* line 90, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.logo {
+  display: block;
+  padding-left: 5px;
+  float: left; }
+  /* line 94, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  .logo a {
+    letter-spacing: 1px;
+    font-family: cocogoose;
+    font-size: 23px;
+    text-decoration: none;
+    color: #333;
+    float: left; }
+    /* line 103, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+    .logo a span {
+      color: #FA474E;
+      margin-right: -3px; }
+  /* line 106, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  .logo .headline {
+    color: #AFAFAF;
+    text-transform: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    float: left;
+    font-weight: 200;
+    display: block;
+    clear: both;
+    margin-top: 1px; }
+
+/* line 119, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.bodyCase section img {
+  width: 100%;
+  height: auto; }
+
+/* line 124, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.previewContainer {
+  width: 102%;
+  margin-left: -5px; }
+  /* line 127, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  .previewContainer .preview {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 10px solid #fff;
+    overflow: hidden; }
+    /* line 135, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+    .previewContainer .preview .title {
+      opacity: 10;
+      background: black;
+      position: absolute; }
+    /* line 139, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+    .previewContainer .preview .holder {
+      display: block; }
+      /* line 141, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+      .previewContainer .preview .holder span {
+        display: none;
+        width: 348px;
+        height: 242px;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.7);
+        margin-top: -246px;
+        margin-left: 1px;
+        line-height: 242px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none; }
+    /* line 153, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+    .previewContainer .preview img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box; }
+
+/* line 161, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.filterNav {
+  padding: 25px 0px;
+  display: block;
+  clear: both; }
+  /* line 165, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  .filterNav ul {
+    text-align: center; }
+    /* line 167, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+    .filterNav ul li {
+      display: inline-block;
+      font-size: 12px; }
+      /* line 171, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+      .filterNav ul li:last-child a {
+        border-right: none; }
+      /* line 173, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+      .filterNav ul li a {
+        text-decoration: none;
+        color: #adadad;
+        letter-spacing: 0.7px;
+        font-weight: 200;
+        text-transform: uppercase;
+        border-right: 1px solid #adadad;
+        padding: 1px 10px;
+        transition: 0.4s; }
+        /* line 182, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+        .filterNav ul li a:hover {
+          color: #333; }
+      /* line 184, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+      .filterNav ul li .active {
+        color: #333;
+        transition: 0.4s; }
+
+/* line 189, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.footer {
+  text-align: center;
+  margin: 100px 0px; }
+  /* line 192, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  .footer .logo {
+    display: inline-block;
+    float: none;
+    margin: 0 auto; }
+    /* line 196, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+    .footer .logo a {
+      text-align: center;
+      text-transform: uppercase; }
+    /* line 199, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+    .footer .logo .headline {
+      text-align: center;
+      padding-top: 5px;
+      float: none; }
+
+/* line 204, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+footer {
+  margin-top: 50px;
+  padding: 30px 0px;
+  border-top: 1px solid #dedede;
+  color: #AFAFAF;
+  font-size: 12px;
+  letter-spacing: 0.5px; }
+  /* line 213, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  footer .row div:first-child {
+    float: left;
+    padding-left: 5px; }
+  /* line 216, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  footer .row div:last-child {
+    float: right;
+    position: relative;
+    left: -5px; }
+  /* line 221, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  footer .row p a {
+    color: #FA474E;
+    text-decoration: none; }
+    /* line 224, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+    footer .row p a:hover {
+      text-decoration: underline; }
+
+/* line 227, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.toTop {
+  display: none;
+  text-align: center;
+  color: #fff;
+  background: #FA474E;
+  text-decoration: none;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 25px;
+  transition: 0.4s; }
+  /* line 238, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  .toTop:hover {
+    background: #E3343B;
+    transition: 0.4s; }
+
+/* line 244, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.bodyCase .detailView {
+  clear: both; }
+  /* line 246, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  .bodyCase .detailView h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px; }
+    /* line 251, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+    .bodyCase .detailView h1 span {
+      display: block;
+      color: #AFAFAF;
+      font-size: 12px;
+      letter-spacing: 3.5px;
+      font-weight: normal;
+      margin-top: 15px;
+      text-transform: uppercase;
+      margin-top: 10px;
+      font-family: Georgia; }
+  /* line 261, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  .bodyCase .detailView p {
+    font-size: 1.1rem;
+    width: 720px;
+    margin: 0 auto;
+    line-height: 1.8em;
+    text-align: center;
+    margin-bottom: 55px;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    color: #5C5C5C; }
+  /* line 271, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  .bodyCase .detailView img {
+    margin-bottom: 50px; }
+
+/* line 274, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.fullScreenshot {
+  border: 1px solid #d8d6d6;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: #f5f6f7;
+  padding-top: 36px;
+  margin-bottom: 50px; }
+
+/* line 286, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.btn_red {
+  background: #FA474E;
+  color: #fff;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  width: 180px;
+  margin: 0 auto;
+  padding: 17px 0px;
+  border-radius: 40px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.4s; }
+  /* line 300, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  .btn_red:hover {
+    background: #E3343B;
+    transition: 0.4s; }
+
+/* line 306, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.bodyCase section .ss {
+  border: 1px solid #d8d6d6;
+  width: 80% !important;
+  margin: 0 auto !important;
+  height: auto;
+  display: block;
+  margin-bottom: 50px !important; }
+
+/* line 314, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.moduleLinks {
+  padding: 0px;
+  margin: 0 auto;
+  width: 500px;
+  margin-bottom: 60px;
+  display: block; }
+  /* line 320, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+  .moduleLinks li {
+    display: inline;
+    margin-right: 22px; }
+    /* line 323, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+    .moduleLinks li a {
+      text-align: center;
+      color: #333;
+      font-weight: bold; }
+      /* line 327, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+      .moduleLinks li a:hover {
+        text-decoration: none; }
+
+/* line 330, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.tshirt {
+  width: 700px !important;
+  height: auto;
+  margin: 0 auto;
+  display: block; }
+
+/* line 337, /Users/kozlow47/workspace/nataliekozlowski.com/source/stylesheets/style.css.sass */
+.about p {
+  line-height: 1.8em; }
