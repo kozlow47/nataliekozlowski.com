@@ -3,6 +3,7 @@ title: "CodeGuard Robot T-shirt | Natalie Kozlowski"
 caseName: "Robot T-Shirt"
 date: 2015-01-21
 category: webDesign
+subtitle: Custom t-shirt design
 preview: "../images/tshirt_robot/pre_robot.png"
 
 caseColor: #7dbd16
@@ -11,8 +12,9 @@ caseColor: #7dbd16
 %section.detailView
   .row
     %h1
-      = data.page.caseName
-      %span Custom T-shirt design
+      %h1
+        = data.page.caseName
+        %span= data.page.subtitle
     %p At CodeGuard I was given the opportunity to create custom, wacky and totally original t-shirts! This t-shirt was inspired by C.G., the CodeGuard robot. He has these tentacle-like arms, so I played with that element and had his arms wrap around the shirt from front to back. We pass our shirts out at conferences and send them to customers. People love them! See some actual tweets below.
     %img{:src => "/images/tshirt_robot/robot4.png", :alt => "CodeGuard robot t-shirt"}
     %img{:class => "tshirt", :src => "/images/tshirt_robot/robot1.jpg", :alt => "CodeGuard robot t-shirt"}

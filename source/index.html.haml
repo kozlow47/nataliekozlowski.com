@@ -10,3 +10,6 @@
       .preview{:class => article.data.category}
         %a.holder{:href => article.url}
           %img{:src => "images/#{article.data.preview}", :alt => article.data.caseName}
+        %h3
+          =article.data.caseName
+          %span=article.data.subtitle

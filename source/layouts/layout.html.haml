@@ -6,11 +6,10 @@
     %link{:href => "images/favicon.png", :rel => "shortcut icon", :type => "image/png"}/
     %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0;", :name => "viewport"}/
     = stylesheet_link_tag "all"
-    = stylesheet_link_tag "amazium"
-    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
-    %script{:src => "/javascripts/all.js"}
 
   %body{:class => page_classes}
     = partial "/layouts/header"
     = yield
     = partial "/layouts/footer"
+  %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+  %script{:src => "/javascripts/all.js"}

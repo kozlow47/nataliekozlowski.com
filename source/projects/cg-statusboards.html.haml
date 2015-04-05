@@ -3,6 +3,7 @@ title: "CodeGuard Status Boards | Natalie Kozlowski"
 caseName: "Status Boards"
 date: 2015-01-20
 category: webDesign
+subtitle: Custom web-app design
 preview: "../images/cg_statusboards/pre_statusboards.png"
 
 caseLink: https://status.codeguard.com/
@@ -13,7 +14,7 @@ caseColor: #7dbd16
   .row
     %h1
       = data.page.caseName
-      %span Custom app design
+      %span= data.page.subtitle
     %p
       To help keep ourselves accountable, the CodeGuard team decided we wanted a set of status boards in the office to display how well our systems are performing. Across four different displays we wanted to show how well our website backups and restores were performing, how well our servers were performing in general, what each developer was working on at the time, our most recent customer reviews and our most recent customer signups. I created a custom design for each display and developed each one using HTML, CSS, JavaScript, and D3.js for the graphs. These four views are now projected on four 50" TVs that are mounted to a wall in our office.
     %img{:class => "fullScreenshot", :src => "/images/cg_statusboards/fullscreen_cgstatus1.png", :alt => "CodeGuard Statusboards Backups"}
