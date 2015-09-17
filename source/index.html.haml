@@ -5,9 +5,16 @@
 //%li=link_to "Graphics & Prints", "javascript:void(0);"
 //%li=link_to "Logo & Branding", "javascript:void(0);"
 .row
+  .filterNav
+    %ul
+      %li Sort Portfolio:
+      %li{:class => "filter", "data-filter" => "all"} All
+      %li{:class => "filter", "data-filter" => ".graphicDesign"} Graphic Design
+      %li{:class => "filter", "data-filter" => ".webDesign"} Web Design
+      %li{:class => "filter", "data-filter" => ".tshirtDesign"} T-shirt Design
   .previewContainer
     - blog.articles.each do |article|
-      .preview{:class => article.data.category}
+      %article.preview.mix{:class => article.data.category}
         %a.holder{:href => article.url}
           %img{:src => "images/#{article.data.preview}", :alt => article.data.caseName}
         %h3

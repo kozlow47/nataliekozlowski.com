@@ -147,16 +147,19 @@ header
 .previewContainer
   width: 102%
   margin-left: -5px
+  .mix
+    display: none
   .preview
     float: left
-    width: 31%
+    width: 30%
     box-sizing: border-box
     -moz-box-sizing: border-box
     -webkit-box-sizing: border-box
-    margin: 11px
+    margin: 18px
     overflow: hidden
+    display: none
     &:hover
-      img
+      a
         opacity: 0.9
         transition: 0.2s
     .title
@@ -187,7 +190,7 @@ header
       transition: 0.2s
 
 .filterNav
-  padding: 25px 0px
+  padding: 15px 0px 35px 0px
   display: block
   clear: both
   ul
@@ -195,23 +198,28 @@ header
     li
       display: inline-block
       font-size: 12px
-      &:last-child
-        a
-          border-right: none
-      a
-        text-decoration: none
-        color: #adadad
-        letter-spacing: 0.7px
-        font-weight: 200
-        text-transform: uppercase
-        border-right: 1px solid #adadad
-        padding: 1px 10px
-        transition: 0.4s
-        &:hover
-          color: $textGrey
-      .active
+      text-decoration: none
+      color: #AFAFAF
+      letter-spacing: 0.7px
+      vertical-align: middle
+      text-transform: uppercase
+      border-right: 1px solid #adadad
+      padding: 1px 10px
+      transition: 0.4s
+      cursor: pointer
+      &:hover
         color: $textGrey
-        transition: 0.4s
+      &:first-child
+        cursor: default
+        &:hover
+          color: #adadad
+      &:last-child
+        border-right: none
+      &:first-child
+        border-right: none
+        padding-right: 0px
+    .active
+      color: $textGrey
 
 //footer styles
 .footer
@@ -368,6 +376,17 @@ footer
   p
     line-height: 1.8em
 
+.grid_project
+  a
+    display: block
+    img
+      width: 22.7% !important
+      margin-right: 30px !important
+      float: left
+    &:last-child
+      img
+        margin-right: 0px !important
+
 // Media Queris start
 // ----------------------------------------
 @media only screen and (max-width: 1100px)
@@ -380,8 +399,12 @@ footer
   .previewContainer
     .preview
       margin: 10px
+  .grid_project
+    a
+      img
+        margin-right: 20px !important
 
-@media only screen and (max-width: 900px)
+@media only screen and (max-width: 930px)
   .previewContainer
     .preview
       width: 47%
@@ -395,6 +418,10 @@ footer
     section
       .ss
         width: 100%
+  .grid_project
+    a
+      img
+        margin-right: 5px !important
 
 @media only screen and (max-width: 710px)
   .row
